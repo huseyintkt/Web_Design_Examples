@@ -1,0 +1,74 @@
+$primary-color: #00a7ff;
+$primary-hover-color: #005d8e;
+
+/* Services 1 */
+#services-1{
+    font-family: 'Roboto', sans-serif;
+    h2{
+        color: $primary-color;
+        font-size: 35px;
+    }
+    .seperator{
+        position: relative;
+        margin-bottom: 8px;
+        i{
+            color: $primary-color;
+        }
+        .left-line{
+            position: absolute;
+            width: 60px;
+            height: 1px;
+            right: 50%;
+            transform: translateX(-50%);
+            top: -5px;
+        }
+        .right-line{
+            position: absolute;
+            width: 60px;
+            height: 1px;
+            left: 50%;
+            transform: translateX(50%);
+            top: -5px;
+        }
+    }
+    p{
+        color: #6e6e6e;
+        font-size: 15px;
+    }
+    .service{
+        h3{
+            font-size: 18px;
+            color: #303133;
+            margin-bottom: 12px;
+        }
+        p{
+            color: #6e6e6e;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        .service-icon{
+            width: 70px;
+            height: 70px;
+            border: 1px solid $primary-color;
+            transform: rotate(45deg);
+            margin: 40px auto;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                cursor: pointer;
+                background-color: $primary-color;
+                i{
+                    color: #ffffff;
+                }
+            }
+            i{
+                color: $primary-color;
+                font-size: 27px;
+                transform: rotate(-45deg);
+                line-height: 70px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+/* Services 2 */
